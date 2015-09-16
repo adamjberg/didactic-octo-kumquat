@@ -27,7 +27,7 @@ void onQuit( bool *running )
 
 int main( int argc, char* args[] )
 {
-	SDL_Init( SDL_INIT_EVERYTHING );
+	SDL_Init( SDL_INIT_VIDEO );
 	IMG_Init( IMG_INIT_JPG );
 
 	bool running = true;

@@ -15,7 +15,6 @@ void FPSCamera::update()
 	Camera *camera = dynamic_cast< Camera* >( object );
 
 	glm::vec3 newPos = camera->position;
-	glm::vec3 newRot = camera->rotation;
 
 	if( input->isButtonDown( STRAFE_LEFT ) )
 	{
@@ -34,25 +33,7 @@ void FPSCamera::update()
 		newPos -= camera->direction * 0.1f;
 	}
 
-	if( input->isKeyDown( SDL_SCANCODE_LEFT ) )
-	{
-		newRot.y += 0.01f;
-	}
-	if( input->isKeyDown( SDL_SCANCODE_RIGHT ) )
-	{
-		newRot.y -= 0.01f;
-	}
-
-	if( input->isKeyDown( SDL_SCANCODE_UP ) )
-	{
-		newRot.x += 0.01f;
-	}
-	if( input->isKeyDown( SDL_SCANCODE_DOWN ) )
-	{
-		newRot.x -= 0.01f;
-	}
 	camera->setPosition( newPos );
-	camera->setRotation( newRot );
 }
 
 void FPSCamera::mouseMoved( int xRel, int yRel )

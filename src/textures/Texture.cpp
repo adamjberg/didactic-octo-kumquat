@@ -19,6 +19,8 @@ Texture::Texture( std::string filename )
 Texture::~Texture()
 {
 	SDL_FreeSurface( surface );
+
+	glDeleteTextures( 1, &id );
 }
 
 void Texture::init( SDL_Surface *surface )

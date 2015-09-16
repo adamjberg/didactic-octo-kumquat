@@ -6,8 +6,7 @@
 #include <SDL.h>
 
 #include "core/Controller.h"
-
-#include "events/sdl_events.h"
+#include "signals/Signal.h"
 
 class SDLEventController : public Controller
 {

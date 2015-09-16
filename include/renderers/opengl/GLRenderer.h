@@ -5,15 +5,8 @@
 #include "GL.h"
 
 #include "cameras/Camera.h"
-
-#include "core/Window.h"
-
 #include "materials/Material.h"
-
 #include "objects/Mesh.h"
-
-#include "renderers/opengl/GLUniform.h"
-
 #include "scenes/Scene.h"
 
 class GLRenderer

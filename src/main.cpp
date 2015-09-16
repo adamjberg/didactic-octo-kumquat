@@ -1,5 +1,4 @@
 #include "SDL_image.h"
-#include "res_path.h"
 #include "textures/Texture.h"
 
 #include "cameras/Camera.h"
@@ -10,10 +9,6 @@
 #include "core/Geometry.h"
 #include "core/Window.h"
 
-#include "display/Quad.h"
-
-#include "events/sdl_events.h"
-
 #include "input/Input.h"
 
 #include "objects/Mesh.h"
@@ -22,12 +17,8 @@
 
 #include "renderers/opengl/Program.h"
 #include "renderers/opengl/GLRenderer.h"
-#include "renderers/opengl/GLUniform.h"
 
 #include "scenes/Scene.h"
-
-#include "tweens/Tween.h"
-#include "tweens/easing/Linear.h"
 
 void onQuit( bool *running )
 {

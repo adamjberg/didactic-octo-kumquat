@@ -1,9 +1,8 @@
 #include "renderers/opengl/GLRenderer.h"
 
 #include "objects/Mesh.h"
+#include "renderers/opengl/GLUniform.h"
 #include "textures/Texture.h"
-
-#include "cleanup.h"
 
 GLRenderer::GLRenderer( SDL_Window *window, Scene &scene, Camera &camera ) : scene( &scene ), camera( &camera )
 {
